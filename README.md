@@ -1,0 +1,1 @@
+# nereyi_gezmeliyiz
