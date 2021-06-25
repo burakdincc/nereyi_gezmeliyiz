@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:odev/animatedChart.dart';
+import 'package:odev/dunyaSehirler.dart';
+import 'package:odev/gestureDetectorTest.dart';
 import 'shadowText.dart';
 import 'hakkında.dart';
 import 'anaSayfa.dart';
 import 'trSehirler.dart';
-import 'dunyaSehirler.dart';
 import 'user.dart';
+import 'ornekApiCekme.dart';
+import 'gestureDetectorTest.dart';
 
 class MyDrawer extends StatefulWidget {
   String isim = "";
@@ -74,10 +78,37 @@ class _MyDrawerState extends State<MyDrawer> {
             onTap: () {
               Navigator.push(
                 context,
+                MaterialPageRoute(builder: (context) => AnimatedChart()),
+              );
+            },
+            title: Text("Kaç Şehir Gezdin"),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                context,
                 MaterialPageRoute(builder: (context) => Hakkinda()),
               );
             },
             title: Text("Hakkında"),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Gelistiriciler()),
+              );
+            },
+            title: Text("Geliştiriciler"),
+          ),
+          ListTile(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => GDTest()),
+              );
+            },
+            title: Text("Gesture Detector Test"),
           ),
         ],
       ),

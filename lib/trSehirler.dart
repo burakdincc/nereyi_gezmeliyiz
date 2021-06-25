@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:odev/animation.dart';
 import 'sehirler.dart';
-
 import 'myDrawer.dart';
 
 class trSehirler extends StatefulWidget {
@@ -68,8 +67,7 @@ class _trSehirlerState extends State<trSehirler> {
                                   onPressed: () {
                                     Navigator.push(
                                       context,
-                                      MaterialPageRoute(
-                                          builder: (context) => Istanbul()),
+                                      Gecis(widget: Istanbul()),
                                     );
                                   },
                                   child: Image.asset('images/İstanbul.jpg'),
@@ -107,8 +105,7 @@ class _trSehirlerState extends State<trSehirler> {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(
-                                            builder: (context) => Ankara()),
+                                        Gecis(widget: Ankara()),
                                       );
                                     },
                                     child: Image.asset('images/Ankara.jpg')),
@@ -145,8 +142,7 @@ class _trSehirlerState extends State<trSehirler> {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(
-                                            builder: (context) => Samsun()),
+                                        Gecis(widget: Samsun()),
                                       );
                                     },
                                     child: Image.asset('images/Samsun.jpg')),
@@ -183,8 +179,7 @@ class _trSehirlerState extends State<trSehirler> {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(
-                                            builder: (context) => Konya()),
+                                        Gecis(widget: Konya()),
                                       );
                                     },
                                     child: Image.asset('images/Konya.jpg')),
@@ -221,8 +216,7 @@ class _trSehirlerState extends State<trSehirler> {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(
-                                            builder: (context) => Izmir()),
+                                        Gecis(widget: Izmir()),
                                       );
                                     },
                                     child: Image.asset('images/İzmir.jpg')),

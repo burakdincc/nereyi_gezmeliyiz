@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:odev/dunyaSehirler.dart';
 import 'myDrawer.dart';
 import 'trSehirler.dart';
-import 'dunyaSehirler.dart';
+import 'package:odev/animation.dart';
 
 class AnaSayfa extends StatefulWidget {
   String isim = "ads";
@@ -58,8 +59,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => dunyaSehirler()),
+                        Gecis(widget: dunyaSehirler()),
                       );
                     },
                   ),
@@ -74,9 +74,10 @@ class _AnaSayfaState extends State<AnaSayfa> {
                     padding: const EdgeInsets.only(
                         top: 100, bottom: 20, left: 15, right: 15),
                     child: Container(
-                        height: 300,
-                        width: 450,
-                        child: Image.asset("images/kizkulesi.jpg")),
+                      height: 300,
+                      width: 450,
+                      child: Image.asset("images/kizkulesi.jpg"),
+                    ),
                   ),
                   ElevatedButton(
                     style:
@@ -85,7 +86,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => trSehirler()),
+                        Gecis(widget: trSehirler()),
                       );
                     },
                   ),

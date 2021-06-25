@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:odev/animation.dart';
 import 'sehirler.dart';
 
 import 'myDrawer.dart';
@@ -71,8 +71,7 @@ class _dunyaSehirlerState extends State<dunyaSehirler> {
                                       onPressed: () {
                                         Navigator.push(
                                           context,
-                                          MaterialPageRoute(
-                                              builder: (context) => Newyork()),
+                                          Gecis(widget: Newyork()),
                                         );
                                       },
                                       child: Image.asset('images/Newyork.jpg')),
@@ -110,8 +109,7 @@ class _dunyaSehirlerState extends State<dunyaSehirler> {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(
-                                            builder: (context) => Paris()),
+                                        Gecis(widget: Paris()),
                                       );
                                     },
                                     child: Image.asset('images/Paris.jpg')),
@@ -148,8 +146,7 @@ class _dunyaSehirlerState extends State<dunyaSehirler> {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(
-                                            builder: (context) => Roma()),
+                                        Gecis(widget: Roma()),
                                       );
                                     },
                                     child: Image.asset('images/Roma.jpg')),
@@ -186,8 +183,7 @@ class _dunyaSehirlerState extends State<dunyaSehirler> {
                                   onPressed: () {
                                     Navigator.push(
                                       context,
-                                      MaterialPageRoute(
-                                          builder: (context) => Venedik()),
+                                      Gecis(widget: Venedik()),
                                     );
                                   },
                                   child: Image.asset('images/Venedik.jpg'),
@@ -225,8 +221,7 @@ class _dunyaSehirlerState extends State<dunyaSehirler> {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(
-                                            builder: (context) => Pekin()),
+                                        Gecis(widget: Pekin()),
                                       );
                                     },
                                     child: Image.asset('images/Pekin.jpg')),
